@@ -9,7 +9,7 @@
     <dataNode name="dn1" dataHost="localhost" database="db1" />
     <dataHost name="localhost" maxCon="1000" minCon="10" balance="0" writeType="0" dbType="mysql" dbDriver="jdbc" switchType="1"  slaveThreshold="100">
 		<heartbeat>select id from index_v4 limit 1</heartbeat>
-		<writeHost host="hostS1" url="jdbc:elasticsearch://es.shijue.me:80/customer" user="root" password="123456" />
+		<writeHost host="hostS1" url="jdbc:elasticsearch://localhost:9200/_sql" user="root" password="123456" />
 	</dataHost>
 	<!--
 		<dataHost name="sequoiadb1" maxCon="1000" minCon="1" balance="0" dbType="sequoiadb" dbDriver="jdbc">
